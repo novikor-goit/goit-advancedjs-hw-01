@@ -30,7 +30,7 @@ const trackState = fieldName => {
   }
 
   field.addEventListener('input', event => {
-    formData[fieldName] = event.target.value;
+    formData[fieldName] = event.target.value.trim();
     save();
   });
 };
